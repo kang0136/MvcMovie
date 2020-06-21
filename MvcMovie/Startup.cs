@@ -1,4 +1,4 @@
-using MvcMovie.Data;
+﻿using MvcMovie.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -54,6 +54,8 @@ namespace MvcMovie
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    //アプリケーションに移動するとき、
+                    //URLがなかったらdefault基本値で使用される
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });

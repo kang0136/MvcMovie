@@ -15,6 +15,7 @@ namespace MvcMovie.Models
                     DbContextOptions<MvcMovieContext>>()))
             {
                 // Look for any movies.
+                //DBが存在するとき、映画が追加されない
                 if (context.Movie.Any())
                 {
                     return;   // DB has been seeded

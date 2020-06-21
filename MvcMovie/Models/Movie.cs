@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Models: アプリケーションのデータを表すクラス
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace MvcMovie.Models

@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using MvcMovie.Data;
 using MvcMovie.Models;
 
+//https://localhost:44379/HelloWorld/Movies
+
 namespace MvcMovie.Controllers
 {
     public class MoviesController : Controller
@@ -16,7 +18,7 @@ namespace MvcMovie.Controllers
 
         public MoviesController(MvcMovieContext context)
         {
-            _context = context;
+            _context = context; //MvcMovieContext(データベース contextを入れる)
         }
 
         // GET: Movies

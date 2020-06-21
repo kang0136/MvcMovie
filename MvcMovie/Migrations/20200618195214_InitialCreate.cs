@@ -6,6 +6,7 @@ namespace MvcMovie.Migrations
     public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
+            //Movieテーブルを作って、idを基本キーでする
         {
             migrationBuilder.CreateTable(
                 name: "Movie",
@@ -26,6 +27,7 @@ namespace MvcMovie.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            //upマイグレーションで変更されたスキーマを戻す
             migrationBuilder.DropTable(
                 name: "Movie");
         }
